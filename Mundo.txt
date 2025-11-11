@@ -1,0 +1,33 @@
+ITEM: llaves
+DESC: Unas llaves brillantes de metal dorado.
+---
+ITEM: cuchillo
+DESC: Un cuchillo afilado de cocina.
+---
+ITEM: linterna
+DESC: Una linterna que aún funciona.
+---
+ITEM: mapa
+DESC: Un viejo mapa del lugar.
+---
+SALA: Sala de Estar
+DESC: Una acogedora sala de estar con muebles antiguos. La luz entra por una ventana polvorosa. Hay una puerta al norte y otra al este.
+SALIDA: Norte -> Cocina
+SALIDA: Este -> Biblioteca
+OBJETO: llaves
+OBJETO: mapa
+---
+SALA: Cocina
+DESC: Una cocina desordenada con platos sucios en el fregadero. Hay un olor extraño en el aire. Puedes ir al sur para volver a la sala de estar.
+SALIDA: Sur -> Sala de Estar
+OBJETO: cuchillo
+---
+SALA: Biblioteca
+DESC: Una biblioteca oscura llena de libros viejos y polvorientos. Las estanterías llegan hasta el techo. Al oeste está la sala de estar y al norte hay un pasillo.
+SALIDA: Oeste -> Sala de Estar
+SALIDA: Norte -> Pasillo
+OBJETO: linterna
+---
+SALA: Pasillo
+DESC: Un pasillo largo y estrecho con poca luz. Las paredes están cubiertas de cuadros antiguos. Al sur está la biblioteca.
+SALIDA: Sur -> Biblioteca

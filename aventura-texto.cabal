@@ -1,0 +1,29 @@
+cabal-version:      2.4
+name:               aventura-texto
+version:            1.0.0.0
+synopsis:           Motor de aventura de texto
+description:        Motor reutilizable para juegos de aventura de texto
+license:            BSD-3-Clause
+author:             Tu Nombre
+maintainer:         tu.email@ejemplo.com
+category:           Game
+build-type:         Simple
+extra-source-files: README.md, mundo.txt
+
+executable aventura-texto
+    main-is:          Main.hs
+    
+    other-modules:    Engine.Types
+                    , Engine.Parser
+                    , Engine.Core
+                    , Engine.Persistence
+    
+    build-depends:    base ^>=4.14.0.0
+                    , containers
+    
+    hs-source-dirs:   .
+    default-language: Haskell2010
+    
+    ghc-options:      -Wall
+                      -threaded
+                      -rtsopts
